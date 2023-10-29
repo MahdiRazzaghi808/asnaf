@@ -64,6 +64,8 @@
 
     .nav__left-pc {
         display: flex !important;
+        align-items: center;
+        gap: 1rem
     }
 
     #menu-icon {

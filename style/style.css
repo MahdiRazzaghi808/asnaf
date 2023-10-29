@@ -119,6 +119,10 @@ navbar {
     display: none !important;
 }
 
+.nav__left-pc a {
+    color: #010101;
+}
+
 #menu-icon {}
 
 /* logo    */
