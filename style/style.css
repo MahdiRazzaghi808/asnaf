@@ -149,7 +149,7 @@ header div {
     top: 40%;
     left: 50%;
     transform: translate(-40%, -50%);
-    color: #FAF4F2;
+    color: #ffffff;
     text-align: center;
 }
 
@@ -174,7 +174,8 @@ header p {
 
 .courses h3 {
     text-align: center;
-    font-size: 4rem;
+    font-size: 2.75rem;
+    font-weight: bold;
     margin-bottom: 3rem;
 
 }

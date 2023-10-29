@@ -31,3 +31,10 @@ const up = document.querySelector('#up');
 up.addEventListener('click', () => {
     window.scrollTo(0, 0)
 })
+
+
+AOS.init({
+    duration: 1000,
+    easing: 'ease-in-out',
+    once: true
+});
