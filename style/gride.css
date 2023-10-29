@@ -27,23 +27,32 @@
         font-size: 1.25rem;
     }
 
+
     .courses__wrapper {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .accordion {
+        font-size: 1.5rem;
     }
 
     .ability__body img {
         width: 10rem;
     }
-    
+
     .ability__body p {
         color: #010101;
         font-weight: bold;
         font-size: 1.75rem;
     }
+
     .footer__main {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
+    .panel p {
+        font-size: 1.5rem;
+    }
 }
 
 
@@ -85,6 +94,7 @@
         flex-basis: 50%;
         width: 100%;
     }
+
     .ability__body {
         display: grid;
         grid-template-columns: repeat(4, 1fr);

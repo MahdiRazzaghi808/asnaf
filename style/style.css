@@ -265,7 +265,7 @@ header p {
     border-radius: 0.5rem;
     text-align: right;
     outline: none;
-    font-size: 15px;
+    font-size: 1.2rem;
     font-weight: bold;
     transition: 0.4s;
     margin-bottom: 1rem;
@@ -273,10 +273,12 @@ header p {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 0.5rem;
 }
 
 .accordion img {
-    width: 2.5rem;
+    width: 2rem;
+    transform: translateX(-0.75rem);
 }
 
 .accordion:hover {
@@ -288,12 +290,13 @@ header p {
     background-color: white;
     overflow: hidden;
     margin: -1rem 0 1rem 0;
-    transition: all 0.25s linear;
+    transition: all 0.35s linear;
 }
 
 .panel p {
     padding: 1rem 1rem 2rem;
     border-radius: 0.5rem;
+    font-size: 1.35rem;
 
 }
 
