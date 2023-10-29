@@ -20,7 +20,6 @@ html {
 *:before {
     box-sizing: inherit;
     font-family: yekan, sans-serif !important;
-
 }
 
 body {
@@ -414,6 +413,7 @@ footer a {
     position: fixed;
     top: 90vh;
     left: 1.5rem;
+    /* bottom: 1.5rem; */
     display: flex;
     justify-content: center;
     align-items: center;
