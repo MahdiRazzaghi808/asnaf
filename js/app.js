@@ -19,10 +19,15 @@ for (i = 0; i < acc.length; i++) {
             allArrow.forEach(element => {
                 element.src = './asset/icon/arrow-next.svg'
             })
-            
+
             panel.style.maxHeight = "15rem";
             this.querySelector("img").src = './asset/icon/arrow-down.svg';
 
         }
     });
 }
+
+const up = document.querySelector('#up');
+up.addEventListener('click', () => {
+    window.scrollTo(0, 0)
+})
