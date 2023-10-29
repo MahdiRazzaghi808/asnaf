@@ -30,7 +30,25 @@ for (i = 0; i < acc.length; i++) {
 const up = document.querySelector('#up');
 up.addEventListener('click', () => {
     window.scrollTo(0, 0)
-})
+});
+
+
+
+function updateImage() {
+    const imageElement = document.getElementById('my-image');
+    const windowWidth = window.innerWidth;
+
+    if (windowWidth <= 576) {
+        imageElement.src = "image2.jpg";
+        imageElement.alt = "عکس شماره 2";
+    } else {
+        imageElement.src = "image1.jpg";
+        imageElement.alt = "عکس شماره 1";
+    }
+}
+window.addEventListener('resize', updateImage);
+window.addEventListener('load', updateImage);
+
 
 
 AOS.init({
