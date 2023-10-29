@@ -179,6 +179,9 @@ header p {
     border-radius: 0.75rem;
     overflow: hidden;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
 .card h4 {
@@ -265,7 +268,8 @@ header p {
     border-radius: 0.5rem;
     text-align: right;
     outline: none;
-    font-size: 1.2rem;
+    font-size: 1.35rem;
+    line-height: 2.2rem;
     font-weight: bold;
     transition: 0.4s;
     margin-bottom: 1rem;
@@ -395,5 +399,5 @@ footer a {
     text-align: center;
     font-weight: bold;
     font-size: 1.3rem;
-    padding: 1.5rem 0;
+    padding: 1.5rem 0.75rem;
 }
