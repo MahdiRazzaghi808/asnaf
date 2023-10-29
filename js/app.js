@@ -39,11 +39,11 @@ function updateImage() {
     const windowWidth = window.innerWidth;
 
     if (windowWidth <= 576) {
-        imageElement.src = "image2.jpg";
-        imageElement.alt = "عکس شماره 2";
+        imageElement.src = "./asset/asnaf.mob.jpg";
+        imageElement.alt = "banner";
     } else {
-        imageElement.src = "image1.jpg";
-        imageElement.alt = "عکس شماره 1";
+        imageElement.src = "./asset/header.jpg";
+        imageElement.alt = "banner";
     }
 }
 window.addEventListener('resize', updateImage);
