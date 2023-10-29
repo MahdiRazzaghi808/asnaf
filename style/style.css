@@ -33,19 +33,6 @@ body {
 
 /*  */
 
-.btn {
-    width: 15rem;
-    height: 4rem;
-    border-radius: 10rem;
-    background-color: #ccc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: "roboto medium";
-    color: #fff
-}
 
 a {
     text-decoration: none;

@@ -5,6 +5,8 @@
     margin-right: auto;
     margin-left: auto;
     position: relative;
+    overflow-x: hidden !important;
+
 }
 
 
