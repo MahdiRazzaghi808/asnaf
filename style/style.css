@@ -194,8 +194,17 @@ header p {
     text-align: justify;
 }
 
+.card__image {
+    overflow: hidden;
+}
+
 .card img {
+    transition: all 0.25s linear;
     width: 100%;
+}
+
+.card img:hover {
+    transform: scale(1.1);
 }
 
 .card button {
