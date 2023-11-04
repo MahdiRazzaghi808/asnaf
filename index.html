@@ -26,22 +26,101 @@
 
             <img src="./asset/icon/menu.svg" alt="" id="menu-icon">
 
-            <div class="nav__left-pc">
+            <!-- when user no login -->
+
+            <div class="nav__left-pc" id="nav-noLogin">
+                <a class="guide" id="downloadLink" href="./asset/guide.pdf" target="_blank"
+                    type="application/octet-stream">
+                    <img src="./asset/icon/guide.svg" alt="guide">
+                    <span>راهنما</span>
+                </a>
+
                 <a href="#">
-                    <img src="./asset/icon/user.svg" alt="">
+                    <img src="./asset/icon/user.svg" alt="user">
                     <span>ورود / ثبت نام</span>
                 </a>
                 <div>
-                    <img src="./asset/icon/search.svg" alt="">
+                    <img src="./asset/icon/search.svg" id="search" alt="search">
                 </div>
             </div>
+
+            <!-- when user login -->
+
+            <div class="nav__left-pc" id="nav-login">
+
+                <!-- <div> -->
+                <img src="./asset/icon/search.svg" id="search" alt="search">
+                <!-- </div> -->
+
+                <a class="guide" id="downloadLink" href="./asset/guide.pdf" target="_blank"
+                    type="application/octet-stream">
+                    <img src="./asset/icon/guide.svg" alt="guide">
+                </a>
+
+                <div class="nav__user-wrapper">
+                    <img src="./asset/icon/f1.png" alt="user" id="user-icon">
+                </div>
+
+                <div class="nav__more-data">
+                    <div>
+                        <img src="./asset/icon/f1.png" alt="avatar">
+                        <span>خوش آمدید</span>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <a href="https://asnafbns.com/my/">
+                                <img src="./asset/icon/puzzle-b.svg" alt="puzzle">
+                                <span>میزکار</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://asnafbns.com/grade/report/overview/index.php">
+                                <img src="./asset/icon/list-stars-b.svg" alt="score">
+                                <span>نمره ها</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="./asset/icon/logout-b.svg" alt="logout">
+                                <span>خروج از سایت</span>
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
         </div>
+
+
 
     </navbar>
 
     <header>
-        <img src="./asset/header.jpg" alt="banner" class="header__banner-sm" id="my-image">
-        <div>
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./asset/header.jpg" alt="banner" class="header__banner-sm" id="my-image">
+                </div>
+                <div class="swiper-slide">
+                    <img src="./asset/header.jpg" alt="banner" class="header__banner-sm" id="my-image">
+
+                </div>
+                <div class="swiper-slide">
+                    <img src="./asset/header.jpg" alt="banner" class="header__banner-sm" id="my-image">
+
+                </div>
+            </div>
+            <!-- 
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div> -->
+        </div>
+
+        <!-- Swiper JS -->
+        <div class="header__text">
             <h1 data-aos="zoom-in">سامانه آموزش مجازی اصناف</h1>
             <p data-aos="zoom-in">مرکز آموزش علمی کاربردی برهان نیروی شمال</p>
         </div>
@@ -332,13 +411,96 @@
     </div>
 
 
+    <div class="search-box">
+        <div class="search-box__wrapper">
+            <img src="./asset/icon/close-bold-svgrepo-com.svg" alt="close" id="close">
+
+            <div class="search-box__input">
+                <input type="text" placeholder="جستجوی درسها">
+                <img src="./asset/icon/search.svg" id="searchIcon" alt="search">
+            </div>
+        </div>
+    </div>
+
+
     <button id="up">
         <img src="./asset/icon/arrow-up.svg" alt="arrow-up.">
     </button>
 
 
+    <div class="mobile-menu">
+        <div>MENU</div>
+
+        <img src="./asset/icon/close-bold-svgrepo-com.svg" alt="close" id="closeBtn-menu">
+
+        <div class="mobile-menu__img" id="mobile-menu__login">
+            <img src="./asset/icon/f1.png" alt="avatar">
+            <img src="./asset/icon/arrow-prev-small-svgrepo-com.svg" alt="">
+        </div>
+
+        <a href="#" class="mobile-menu__noLogin">
+            <span>ورود</span>
+        </a>
+
+        <a href="#" class="mobile-menu__noLogin">
+            <span>ثبت نام</span>
+        </a>
+
+        <a href="tel:013-32127232">
+            <span>جستجو در سایت</span>
+            <img src="./asset/icon/search-w.svg" id="search" alt="search">
+        </a>
+
+        <a class="guide" id="downloadLink" href="./asset/guide.pdf" target="_blank" type="application/octet-stream">
+            <span>راهنما</span>
+
+            <img src="./asset/icon/guide-w.svg" alt="guide">
+        </a>
+
+        <a href="tel:013-32127232">
+            <span>013-32127232</span>
+            <img src="./asset/icon/phone.svg" alt="">
+        </a>
+
+        <a href="mailto:info@bnsh-uast.ac.ir">
+            <span>info@bnsh-uast.ac.ir</span>
+            <img src="./asset/icon/email.svg" alt="">
+        </a>
+
+        <a href="">
+            <span>Become an Instructor</span>
+        </a>
+
+    </div>
+
+    <div class="mobile-subMenu">
+
+        <div class="mobile-subMenu-menu__img" id="mobile-menu__login">
+            <img src="./asset/icon/f1.png" alt="avatar">
+            <img src="./asset/icon/arrow-prev-small-svgrepo-com.svg" alt="" id="back-to-menu">
+        </div>
+
+        <a href="#">
+            <span>میزکار</span>
+            <img src="./asset/icon/puzzle.svg" alt="puzzle">
+
+        </a>
+
+        <a href="#">
+            <span>نمره ها</span>
+            <img src="./asset/icon/list-stars.svg" alt="list-stars">
+        </a>
+
+        <a href="#">
+            <span>خروج از سایت</span>
+            <img src="./asset/icon/logout.svg" alt="logout">
+        </a>
+    </div>
+
+
 
     <script src="./vendor/aos/aos.js"></script>
+    <script src="./vendor/swiper/swiper-bundle.min.js"></script>
     <script src="./js/app.js"></script>
 
     <!---start GOFTINO code--->

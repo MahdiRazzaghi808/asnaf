@@ -65,7 +65,7 @@
     }
 
     .nav__left-pc {
-        display: flex !important;
+        display: flex;
         align-items: center;
         gap: 1rem
     }
@@ -82,6 +82,11 @@
         font-size: 1.75rem;
     }
 
+
+    .mobile-menu,
+    .mobile-subMenu {
+        display: none;
+    }
 
 
 
@@ -107,6 +112,12 @@
     .footer__main {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    .search-box__input {
+        width: 70%;
+    }
+
+
 }
 
 
@@ -155,7 +166,13 @@
         font-size: 2rem;
     }
 
+    .search-box__input {
+        width: 900px;
+    }
 
+    #close {
+        left: 4rem;
+    }
 
 }
 
